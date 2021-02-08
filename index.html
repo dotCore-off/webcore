@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Main informations -->
+<head>
+<meta charset="UTF-8">
+<title>dotCore - Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Needed Stylesheets -->
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css'>
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<!-- Main Body -->
+<body translate="no">
+<section class="hero is-fullheight">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <!-- User Card + Others -->
+        <div class="column is-3 is-flex">
+          <div class="column-child sidebar shadow">
+            <div class="sidebar-header has-text-centered">
+              <!-- Cat Image / Cat is love, cat is life -->
+              <div class="photo"><img width="75%" style="border-radius: 30%; padding: 15px;" src="assets/img/dotcore-logo.jpg"/></div>
+              <h2 class="header-name">dotCore</h2>
+              <h5>Étudiant en informatique</h5>
+                <!-- My Links -->
+                <div class="social-icons">
+                  <a href="https://twitter.com/samgaze_"><i class="fab fa-twitter icon"></i></a>
+                  <a href="https://github.com/samgaze"><i class="fab fa-github icon"></i></a>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- Terminal -->
+        <div class="column is-flex">
+          <div class="column-child terminal">
+            <!-- Terminal Top Bar + Icons -->
+            <div class="terminal-bar dark-mode">
+              <div class="icon-btn close"></div>
+              <div class="icon-btn min"></div>
+              <div class="icon-btn max"></div>
+              <div class="terminal-bar-text is-hidden-mobile dark-mode-text">Logged in as <span class="logID">debian@dotcore</span></div>
+            </div>
+            <!-- Terminal Main Container -->
+            <div class="terminal-window primary-bg" onclick="document.getElementById('dummyKeyboard').focus();">
+              <div class="terminal-output" id="terminalOutput">
+                <div class="terminal-line">
+                  <span class="help-msg">Bienvenue, humble visiteur 👋 — Tapez <span class="code">help</span> pour avoir la liste des commandes disponibles.</span>
+                </div>
+              </div>
+              <!-- Terminal Line Template -->
+              <div class="terminal-line">
+                <span class="success">➜</span> <span class="directory">~</span> <span class="user-input" id="userInput"></span>
+                <input type="text" id="dummyKeyboard" class="dummy-keyboard">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer + ToS / CGU -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        dotcore-lab.net | All rights reserved ® 2021</p>
+    </div>
+  </footer>
+</section>
+
+<!-- Needed Scripts -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-9bf952ccbbd13c245169a0a1190323a27ce073a3d304b8c0fdf421ab22794a58.js"></script>
+<script src='https://use.fontawesome.com/releases/v5.3.1/js/all.js'></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
+<!-- End of the file -->
