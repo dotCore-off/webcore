@@ -32,6 +32,7 @@ p {
 
 
 /* Style - User Card */
+
 .sidebar {
   background-color: rgb(20, 20, 20);
   display: flex;
@@ -42,16 +43,23 @@ p {
   opacity: 1;
 }
 
-
-/* Style - User Links */
-.sidebar-link {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  color: rgba(139, 180, 216, 0.94);
+.photo {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s ease-in-out;
 }
 
-.sidebar-link:hover {
-  color: rgb(230, 241, 255);
+.photo:hover {
+  cursor: pointer;
+  transform: scale(0.8) rotate(-15deg);
+  -webkit-transform: scale(0.8) rotate(-15deg);
+  opacity: 0.7;
 }
 
 .header-name {
@@ -71,9 +79,54 @@ p {
   color: white;
 }
 
-.icon:hover {
-  color: white;
+/* Here, we extend the Social Icons div to fullfil the container */
+.social-icons {
+  width: 100%;
+  height: 100px;
 }
+
+/* Social Icons - Properties + Animations */
+.icon {
+  /* Basically, the hitbox of the icons */
+  height: 17px;
+  /* Space between icons */
+  margin: 30px;
+  /* Color + Some init properties for animations */
+  color: white;
+  transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  -o-transition:.7s;
+  -ms-transition:.7s;
+  -moz-transition:.7s;
+  -webkit-transition:.7s;
+  transition:.7s ease-in-out;
+}
+
+/* Twitter Icon Animation */
+.fa-twitter:hover {
+  cursor: pointer;
+  color: #4d9be4;
+	-webkit-transform: scale(4.0) rotate(360deg);
+	transform: scale(4.0) rotate(360deg);
+} 
+
+/* Github Icon Animation */
+.fa-github:hover {
+  cursor: pointer;
+  color: #9a43a7;
+	-webkit-transform: scale(4.0) rotate(360deg);
+	transform: scale(4.0) rotate(360deg);
+}
+
+/* Linkedin Icon Animation */
+.fa-linkedin:hover {
+  cursor: pointer;
+  color: #0a66c2;
+	-webkit-transform: scale(4.0) rotate(360deg);
+	transform: scale(4.0) rotate(360deg);
+}
+
+/* Style Properties - Terminal */
 
 .terminal-bar {
   background-color: #eae8e9;
@@ -81,6 +134,14 @@ p {
   border-top-right-radius: 5px;
   display: flex;
   position: relative;
+} 
+
+.help-msg {
+  opacity: 0.5;
+}
+
+.terminal-line-success {
+  opacity: 0.5;
 }
 
 .dark-mode {
@@ -191,6 +252,14 @@ p {
   color: #b7c5d2;
 }
 
+.terminal-line-error {
+  position: relative;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 0.9rem;
+  color: #d7566a;
+  opacity: 0.7;
+}
+
 .directory {
   color: #75e1e7;
   font-weight: 500;
@@ -221,6 +290,28 @@ p {
 /* Remove scrollbar cuz it's useless here */
 ::-webkit-scrollbar {
   display: none;
+}
+
+
+/* Style Properties - Footer */
+
+.footer {
+  padding-bottom: 2%;
+  font-style: oblique;
+}
+
+.dcWebsite {
+  color: rgb(136, 146, 176); 
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.dcWebsite:hover {
+  cursor: pointer;
+  color: #4d9be4;
 }
 
 

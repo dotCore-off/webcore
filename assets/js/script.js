@@ -1,21 +1,12 @@
 const BLACKLISTED_KEY_CODES = [38];
 const COMMANDS = {
     help:
-        'Commandes disponibles: <span class="code">about</span>, <span class="code">experience</span>, <span class="code">skills</span>, <span class="code">contact</span>, <span class="code">bitcoin</span>',
-    // about:
-    //     "Salut 👋<br>Je suis un développeur autodidacte. Après plus de 4 ans d'expérience, je me suis dirigé vers plusieurs languages de programation tels que le Lua, PHP, CSS et autres. J'ai également ma communauté multi-gaming nommé Ethernium.net",
+        'Commandes disponibles: <span class="code">about</span>, <span class="code">cv</span>, <span class="code">skills</span>',
     about:
-        "Salut 👋<br>Bienvenue sur mon site ! Fondateur de la communauté Ethernium.net",
+        "Je m'appelle Alexis Badel et j'ai 18 ans.<br>Étant actuellement étudiant en deuxième année de DUT Réseaux et Télécommunications, je suis à la recherche d'un stage afin de pouvoir valider mon diplôme. 🎓",
     skills:
         '<span class="code">Languages:</span> CSS, JavaScript, PHP, Lua<br><span class="code">Technologies:</span> SQL, GIT<br><span class="code">OS:</span> Windows/Linux',
-    education:
-        "not found",
-    resume: "<a href='./cv.pdf' class='success link'>cv.pdf</a>",
-    experience: "Pas d'expérience en entreprise actuellement.",
-    contact:
-        "Vous pouvez me contacter en cliquant sur les liens suivants: <a href='https://www.twitter.com/samgaze_/' class='success link'>Twitter</a>",
-    bitcoin:
-        "Bitcoin Whitepaper: <a href='bitcoin.pdf' target='blank' class='success link'>Bitcoin</a>"
+    cv: "Voici la dernière version de mon CV ❱ <a href='./assets/other/CV_BADEL_Alexis_2021_VF.pdf' class='success link'>CV_BADEL_Alexis_2021_VF.pdf</a>"
 };
 let userInput, terminalOutput;
 
@@ -23,7 +14,7 @@ const app = () => {
     userInput = document.getElementById("userInput");
     terminalOutput = document.getElementById("terminalOutput");
     document.getElementById("dummyKeyboard").focus();
-    console.log("Application loaded");
+    console.log("[Terminal - Webcore] Système prêt !");
 };
 
 const execute = function executeCommand(input) {
@@ -32,10 +23,10 @@ const execute = function executeCommand(input) {
     if (input.length === 0) {
         return;
     }
-    output = `<div class="terminal-line"><span class="success">➜</span> <span class="directory">~</span> ${input}</div>`;
+    output = `<div class="terminal-line-success"><span class="success">➜</span> ${input}</div>`;
     if (!COMMANDS.hasOwnProperty(input)) {
-        output += `<div class="terminal-line">no such command: ${input}</div>`;
-        console.log("Oops! no such command");
+        output += `<div class="terminal-line-error">Commande non-reconnue: <span class="code">${input}</span></div>`;
+        console.log("[Terminal - Webcore] Cette commande n'existe pas !");
     } else {
         output += COMMANDS[input];
     }
