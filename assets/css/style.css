@@ -103,7 +103,7 @@ p {
 }
 
 /* Twitter Icon Animation */
-.fa-twitter:hover {
+.fa-trello:hover {
   cursor: pointer;
   color: #4d9be4;
 	-webkit-transform: scale(4.0) rotate(360deg);
@@ -142,6 +142,26 @@ p {
 
 .terminal-line-success {
   opacity: 0.5;
+}
+
+.website-current-version {
+  font-family: "Anonymous Pro", monospace;
+  position: relative;
+  top: 210px;
+  left: 920px;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s ease-in-out;
+}
+
+.website-current-version:hover {
+  font-family: "Anonymous Pro", monospace;
+  position: relative;
+  top: 210px;
+  left: 920px;
+  color: #fa615c;
 }
 
 .dark-mode {
