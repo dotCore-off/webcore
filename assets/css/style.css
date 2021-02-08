@@ -146,9 +146,6 @@ p {
 
 .website-current-version {
   font-family: "Anonymous Pro", monospace;
-  position: relative;
-  top: 210px;
-  left: 920px;
   -o-transition: .5s;
   -ms-transition: .5s;
   -moz-transition: .5s;
@@ -158,9 +155,6 @@ p {
 
 .website-current-version:hover {
   font-family: "Anonymous Pro", monospace;
-  position: relative;
-  top: 210px;
-  left: 920px;
   color: #fa615c;
 }
 
@@ -316,8 +310,12 @@ p {
 /* Style Properties - Footer */
 
 .footer {
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   font-style: oblique;
+}
+
+.footer-para {
+  margin-bottom: 0%;
 }
 
 .dcWebsite {
@@ -327,6 +325,7 @@ p {
   -moz-transition:.5s;
   -webkit-transition:.5s;
   transition:.5s;
+  margin-bottom: 0%;
 }
 
 .dcWebsite:hover {
