@@ -1,11 +1,11 @@
 const BLACKLISTED_KEY_CODES = [38];
 const COMMANDS = {
     help:
-        'Commandes disponibles: <span class="code">about</span>, <span class="code">cv</span>, <span class="code">skills</span>',
+        'Commandes disponibles: <span class="code">about</span>, <span class="code">cv</span>, <span class="code">comp</span>',
     about:
         "Je m'appelle Alexis Badel et j'ai 18 ans.<br>Étant actuellement étudiant en deuxième année de DUT Réseaux et Télécommunications, je suis à la recherche d'un stage afin de pouvoir valider mon diplôme. 🎓",
-    skills:
-        '<span class="code">Languages:</span> CSS, JavaScript, PHP, Lua<br><span class="code">Technologies:</span> SQL, GIT<br><span class="code">OS:</span> Windows/Linux',
+    comp:
+        'Je maîtrise actuellement les éléments suivants :<br><span class="code">Langages ❱</span> HTML / CSS / SCSS / JavaScript / PHP / Lua / C / C++<br><span class="code">Frameworks ❱</span> Symfony / ReactJs / Laravel<br><span class="code">CMS ❱</span> XenForo / IPB / WordPress / WHMCS',
     cv: "Voici la dernière version de mon CV ❱ <a href='./assets/other/CV_BADEL_Alexis_2021_VF.pdf' class='success link'>CV_BADEL_Alexis_2021_VF.pdf</a>"
 };
 let userInput, terminalOutput;

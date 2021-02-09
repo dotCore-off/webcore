@@ -144,20 +144,6 @@ p {
   opacity: 0.5;
 }
 
-.website-current-version {
-  font-family: "Anonymous Pro", monospace;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  transition: .5s ease-in-out;
-}
-
-.website-current-version:hover {
-  font-family: "Anonymous Pro", monospace;
-  color: #fa615c;
-}
-
 .dark-mode {
   background-image: linear-gradient(180deg, #464248 0%, #3b383d 100%);
   border-bottom: 1px solid rgba(66, 66, 66, 0.5);
@@ -331,6 +317,18 @@ p {
 .dcWebsite:hover {
   cursor: pointer;
   color: #4d9be4;
+}
+
+.website-current-version {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s ease-in-out;
+}
+
+.website-current-version:hover {
+  color: #fa615c;
 }
 
 
