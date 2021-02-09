@@ -6,7 +6,7 @@ const COMMANDS = {
         "Je m'appelle Alexis Badel et j'ai 18 ans.<br>Étant actuellement étudiant en deuxième année de DUT Réseaux et Télécommunications, je suis à la recherche d'un stage afin de pouvoir valider mon diplôme. 🎓",
     comp:
         'Je maîtrise actuellement les éléments suivants :<br><span class="code">Langages ❱</span> HTML / CSS / SCSS / JavaScript / PHP / Lua / C / C++<br><span class="code">Frameworks ❱</span> Symfony / ReactJs / Laravel<br><span class="code">CMS ❱</span> XenForo / IPB / WordPress / WHMCS',
-    cv: "Voici la dernière version de mon CV ❱ <a href='./assets/other/CV_BADEL_Alexis_2021_VF.pdf' class='success link'>CV_BADEL_Alexis_2021_VF.pdf</a>"
+    cv: "Voici la dernière version de mon CV ❱ <a href='./assets/other/CV_BADEL_Alexis_2021_VF.pdf' class='success link'>CV_BADEL_Alexis_2021_VF.pdf</a><br><i>Le numéro de téléphone n'y figure pas par mesure de sécurité.</i>"
 };
 let userInput, terminalOutput;
 
