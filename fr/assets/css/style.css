@@ -1,0 +1,340 @@
+/* CSS by Alexis 'dotCore' Badel */
+
+/* Style - General Properties */
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body,
+footer,
+.hero-body {
+  background-color: rgb(35, 35, 35) !important;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  color: rgb(136, 146, 176);
+}
+
+.title {
+  color: rgba(139, 180, 216, 0.94);
+}
+
+
+/* Style - User Card */
+
+.sidebar {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  color: rgb(136, 146, 176);
+  opacity: 1;
+}
+
+.photo {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s ease-in-out;
+}
+
+.photo:hover {
+  cursor: pointer;
+  transform: scale(0.8) rotate(-15deg);
+  -webkit-transform: scale(0.8) rotate(-15deg);
+  opacity: 0.7;
+}
+
+.header-name {
+  font-size: large;
+  font-weight: 600;
+  color: rgb(230, 241, 255);
+}
+
+.column-header {
+  border-bottom: 2px rgb(45, 57, 82) solid;
+  margin-bottom: 1rem;
+}
+
+.column-header > h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  color: white;
+}
+
+/* Here, we extend the Social Icons div to fullfil the container */
+.social-icons {
+  width: 100%;
+  height: 100px;
+}
+
+/* Social Icons - Properties + Animations */
+.icon {
+  /* Basically, the hitbox of the icons */
+  height: 17px;
+  /* Space between icons */
+  margin: 30px;
+  /* Color + Some init properties for animations */
+  color: white;
+  transform: scale(2.5);
+  -webkit-transform: scale(2.5);
+  -o-transition:.7s;
+  -ms-transition:.7s;
+  -moz-transition:.7s;
+  -webkit-transition:.7s;
+  transition:.7s ease-in-out;
+}
+
+/* Twitter Icon Animation */
+.fa-trello:hover {
+  cursor: pointer;
+  color: #4d9be4;
+	-webkit-transform: scale(4.0) rotate(360deg);
+	transform: scale(4.0) rotate(360deg);
+} 
+
+/* Github Icon Animation */
+.fa-github:hover {
+  cursor: pointer;
+  color: #9a43a7;
+	-webkit-transform: scale(4.0) rotate(360deg);
+	transform: scale(4.0) rotate(360deg);
+}
+
+/* Linkedin Icon Animation */
+.fa-linkedin:hover {
+  cursor: pointer;
+  color: #0a66c2;
+	-webkit-transform: scale(4.0) rotate(360deg);
+	transform: scale(4.0) rotate(360deg);
+}
+
+/* Style Properties - Terminal */
+
+.terminal-bar {
+  background-color: #eae8e9;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: flex;
+  position: relative;
+} 
+
+.help-msg {
+  opacity: 0.5;
+}
+
+.terminal-line-success {
+  opacity: 0.5;
+}
+
+.dark-mode {
+  background-image: linear-gradient(180deg, #464248 0%, #3b383d 100%);
+  border-bottom: 1px solid rgba(66, 66, 66, 0.5);
+}
+
+.dark-mode-text {
+  color: #bdb9bf !important;
+}
+
+.icon-btn {
+  border-radius: 50%;
+  margin-top: 7px;
+  height: 15px;
+  width: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.terminal-bar > div.icon-btn:first-child {
+  margin-left: 0.6rem;
+}
+
+.terminal-bar > div.icon-btn:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.terminal-bar > div.icon-btn:last-child {
+  margin-right: 0.6rem;
+}
+
+
+/* Style - Terminal Icons */
+.close {
+  background-color: #fa615c;
+}
+
+.max {
+  background-color: #3fc950;
+}
+
+.min {
+  background-color: #ffbd48;
+}
+
+.terminal-window {
+  background-color: black;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: 300px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.logID {
+  color: white;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.logID:hover {
+  cursor: pointer;
+  color: #d7566a;
+}
+
+.primary-bg {
+  background-color: rgb(15, 15, 15);
+}
+
+.shadow {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.terminal-bar-text {
+  position: absolute;
+  margin-top: 3px;
+  color: #383838;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.has-equal-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-output {
+  overflow-y: hidden;
+  overflow: auto;
+}
+
+.column-child {
+  flex: 1;
+}
+
+.terminal-line {
+  position: relative;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 0.9rem;
+  color: #b7c5d2;
+}
+
+.terminal-line-error {
+  position: relative;
+  font-family: "Anonymous Pro", monospace;
+  font-size: 0.9rem;
+  color: #d7566a;
+  opacity: 0.7;
+}
+
+.directory {
+  color: #75e1e7;
+  font-weight: 500;
+}
+
+.success {
+  color: #8dd39e;
+}
+
+.code,
+.error,
+.fa-heart {
+  color: #d7566a;
+}
+
+.fa-heart {
+  padding-top: 0.5rem;
+}
+
+
+/* We remove the Dummy Keyboard ugly block */
+.dummy-keyboard {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+
+/* Remove scrollbar cuz it's useless here */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Style Properties - Footer */
+
+.footer {
+  padding-bottom: 1%;
+  font-style: oblique;
+}
+
+.footer-para {
+  margin-bottom: 0%;
+}
+
+.dcWebsite {
+  color: rgb(136, 146, 176); 
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  margin-bottom: 0%;
+}
+
+.dcWebsite:hover {
+  cursor: pointer;
+  color: #4d9be4;
+}
+
+.website-current-version {
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s ease-in-out;
+}
+
+.website-current-version:hover {
+  color: #fa615c;
+}
+
+
+/* Resolution Modifier */
+@media screen and (max-width: 768px) {
+  .resume {
+    padding-bottom: 0.5rem;
+  }
+}

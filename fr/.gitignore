@@ -1,0 +1,4 @@
+## Just here to ignore some non-essential files
+
+# Ignore PDF Files
+*.pdf
